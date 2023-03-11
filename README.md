@@ -4,5 +4,5 @@
 
 ## Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Keulsss&show_icons=true&count_private=true&theme=merko&card_width=500)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Keulsss&theme=merko&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Keulsss&show_icons=true&count_private=true&theme=merko&card_width=1000px)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Keulsss&theme=merko&date_format=M%20j%5B%2C%20Y%5D&card_width=1000px)
