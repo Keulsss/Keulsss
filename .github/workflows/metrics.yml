@@ -31,7 +31,3 @@ jobs:
           plugin_notable_types: commit, pull_request, issue
           plugin_followup: yes
           plugin_stars: yes
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
