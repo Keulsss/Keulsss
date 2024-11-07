@@ -23,4 +23,3 @@ jobs:
           base: header
           plugin_languages: yes
           plugin_languages_details: percentage
-          plugin_stars: yes
