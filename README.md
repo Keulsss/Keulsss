@@ -6,6 +6,6 @@
 
 ![GitHub Metrics](github-metrics.svg)
 
-## GitHub Contribution Game
+## Contributions
 
-![GitHub Contribution Game](game.gif)
+![GitHub Contributions Game](game.gif)
