@@ -5,3 +5,7 @@
 ## Stats
 
 ![GitHub Metrics](github-metrics.svg)
+
+## GitHub Contribution Game
+
+![GitHub Contribution Game](game.gif)
