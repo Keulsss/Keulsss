@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>Keulsss/renovate-config"],
+  "schedule": ["before 6am on the first day of the month"],
+  "packageRules": [
+    {
+      "description": "Profile repo with no test CI — auto-merge safe GitHub Actions bumps (digest/pin/patch/minor); majors stay on the dependency dashboard for manual review",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["digest", "pin", "patch", "minor"],
+      "automerge": true
+    }
+  ]
+}
