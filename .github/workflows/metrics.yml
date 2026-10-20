@@ -1,9 +1,12 @@
 name: GitHub Metrics
 
 on:
-  push: { branches: ["master", "main"] }
+  push:
+    branches: ["master", "main"]
+    paths-ignore: ["github-metrics.svg"]
   schedule:
     - cron: "0 0 * * *" # Scheduled to run once a day at midnight
+  workflow_dispatch:
 
 jobs:
   github-metrics:
