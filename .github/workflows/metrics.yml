@@ -15,9 +15,9 @@ concurrency:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
-      actions: read
 
     steps:
       - name: Checkout repository
