@@ -8,6 +8,10 @@ on:
     - cron: "0 0 * * *" # Scheduled to run once a day at midnight
   workflow_dispatch:
 
+concurrency:
+  group: main-writes
+  cancel-in-progress: false
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -18,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
 
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34

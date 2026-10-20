@@ -2,8 +2,12 @@ name: Update Space Shooter Game
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
+    - cron: '30 0 * * *'  # Daily at 00:30 UTC, after the metrics job
   workflow_dispatch:  # Allow manual trigger
+
+concurrency:
+  group: main-writes
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -14,6 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: main
           fetch-depth: 2 # required by gh-space-shooter@v2 commit-amend logic
 
       - uses: czl9707/gh-space-shooter@eea3dd4d83e464ec7c4153e09e303952b924f5c5 # v2.0.5
